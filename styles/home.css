@@ -1,1 +1,48 @@
 /* add css for index.html */
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+h3 {
+    padding: 15px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+button {
+    margin: 10px;
+}
+
+#selection {
+    text-align: center;
+}
+
+#rock-image {
+    border: 5px solid gray;
+    margin: 0;
+}
+
+#paper-image {
+    border: 5px solid wheat;
+}
+
+#scissors-image {
+    border: 5px solid brown;
+}
+
+#display-results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
