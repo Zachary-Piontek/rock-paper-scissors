@@ -40,9 +40,15 @@ button {
     border: 5px solid brown;
 }
 
+#game-choices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 #display-results {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     border: 1px solid black;
 }
