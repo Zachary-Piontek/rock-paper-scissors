@@ -1,6 +1,8 @@
 ## The Golden Rule:
 
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
+🦸 🦸‍♂️ `Stop starting and start finishing.` 
+
+![wireframe](/assets/Wireframe-rock-paper-scissors.png)
 
 1. Limit Work in Progress (WIP)
 1. Validate each line of code before moving forward
@@ -8,7 +10,8 @@
 
 ## Making a plan
 
-1. Make a drawing of your app. **Simple "wireframes"**
+1. Make a drawing of your app. **Simple "wireframes"*
+
 1. Once you have a drawing, **name the HTML elements** you'll need to realize your vision**
 1. Determine the Components (sections) of your app.
 1. Within each component:
