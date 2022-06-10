@@ -74,12 +74,17 @@ const lossesDisplay = document. getElementById('user-losses');
 function displayResults() {
     // add an if (outcome) with curly for interesting bug :)
     // because of 1, 0, -1 logic truthy falesy
-    
+    /* example below
     if (outcome) {
         winsDisplay.textContent = wins;
         drawsDisplay.textContent = draws;
         lossesDisplay.textContent = losses;
     }
+    */
+    winsDisplay.textContent = wins;
+    drawsDisplay.textContent = draws;
+    lossesDisplay.textContent = losses;
+    
 }
 
 displayResults();
