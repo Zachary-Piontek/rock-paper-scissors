@@ -10,6 +10,7 @@ let userThrew = '';
 let wins = 0;
 let draws = 0;
 let losses = 0;
+let outcome = 0;
 
 
 const rockButton = document.getElementById('rock-button');
@@ -19,7 +20,7 @@ const scissorsButton = document. getElementById('scissors-button');
     // component
 function gameOutcome(){
     computerThrew = getRandomItem(threw);
-    const outcome = score(userThrew, computerThrew);
+    outcome = score(userThrew, computerThrew);
 
     if (outcome === -1) {
         losses += 1;
@@ -57,20 +58,23 @@ function displayScoreboard() {
     
 }
 rockButton.addEventListener('click', () => {
-    gameOutcome(1);
+    userThrew = 'rock';
+    gameOutcome();
 });
 paperButton.addEventListener('click', () => {
-    gameOutcome(0);
+    userThrew = 'paper';
+    gameOutcome();
 });
 scissorsButton.addEventListener('click', () => {
-    gameOutcome(-1);
+    userThrew = 'scissors';
+    gameOutcome();
 });
 const winsDisplay = document.getElementById('user-wins');
 const drawsDisplay = document.getElementById('user-draws');
 const lossesDisplay = document. getElementById('user-losses');
 
 function displayResults() {
-    if (userThrew) {
+    if (outcome) {
         winsDisplay.textContent = wins;
         drawsDisplay.textContent = draws;
         lossesDisplay.textContent = losses;
