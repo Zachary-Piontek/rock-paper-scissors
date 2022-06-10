@@ -23,7 +23,7 @@ export function score(userThrew, computerThrew) {
     else if (userThrew === 'scissors' && computerThrew === 'paper') {
         return 1;
     }
-    else (userThrew === computerThrew); {
+    else {
         return 0;
     }
 }

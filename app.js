@@ -24,11 +24,9 @@ function gameOutcome(){
 
     if (outcome === -1) {
         losses += 1;
-    }
-    else if (outcome === 0) {
+    } else if (outcome === 0) {
         draws += 1;
-    }
-    else if (outcome === 1) {
+    } else if (outcome === 1) {
         wins += 1;
     }
 
@@ -74,11 +72,16 @@ const drawsDisplay = document.getElementById('user-draws');
 const lossesDisplay = document. getElementById('user-losses');
 
 function displayResults() {
+    // add an if (outcome) with curly for interesting bug :)
+    // because of 1, 0, -1 logic truthy falesy
+    
     if (outcome) {
         winsDisplay.textContent = wins;
         drawsDisplay.textContent = draws;
         lossesDisplay.textContent = losses;
     }
 }
+
 displayResults();
 displayScoreboard();
+
